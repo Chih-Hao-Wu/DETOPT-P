@@ -1,4 +1,4 @@
-# DETOPT
+# DETOPT-P
 This is the repository for `DETOPT` a combinatorial optimization method for **DET**ermining **O**ptimal **P**lacement in **T**umor progression history of single nucleotide variants (SNVs) from the genomic regions impacted by copy-number aberrations (CNAs) using multi-sample bulk DNA sequencing data.
 
 # Contents
