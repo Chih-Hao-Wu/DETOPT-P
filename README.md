@@ -7,14 +7,6 @@ This is the repository for `DETOPT` a combinatorial optimization method for **DE
   2. [Usage](#usage)
      * [required input data](#input)
      * [output](#output)
-  3. [Demos](#demos)
-     * [**summary information**](real_data/demo/README.md#Multi-region-longitudinal-bulk-DNA-sequenced-samples-from-metastatic-breast-cancer-(mBrCa)-patient)
-     * [**longitudinal consistency analysis**](real_data/longitudinal_consistency)
-     * [**variant placements**](real_data/variants_placements)
-  4. [Support](#support)
-
-<!---(real_data/demo/README.md#Longitudinal-consistency-of-base-tree-topology)--->
-<!---(real_data/demo/README.md#Output-of-DETOPT-on-patient-4355-data)--->
 
 <a name="install"></a>
 # Installation
@@ -108,7 +100,7 @@ NODE_ID    PARENT_ID    MUTATIONS_AT_NODE    SAMPLE_IDS                 NODE_FRE
 `DETOPT` produces two (2) additional files. `_mut_copy_numbers.tsv` contains the allele-specific number of copies of the mutant allele (on A,B) for each mutation (row) in each node (column). `_tot_copy_numbers.tsv` contains the allele-specific number of total copies of each allele (on A,B) for each mutation (row) in each node (column). 
 
 <a name="demos"></a>
-# Demos
+# Usage
 
 **Example**|**Description**|**output**
 -----------|---------------|-----------
@@ -119,10 +111,6 @@ NODE_ID    PARENT_ID    MUTATIONS_AT_NODE    SAMPLE_IDS                 NODE_FRE
 ```console
 (detopt) $ python src/detopt.py -d real_data/demo/demo_inputs -o real_data/demo/demo_outputs/4355 -s 4355.snvs.input -t 4355.tree
 ```
-
-<a name="support"></a>
-# Support
-The software and corresponding documentations are maintained by the research group of Dr. S. Cenk Sahinalp. If you have encountered issues with the tool or have inquiries, please raise it on the [issue forum](https://github.com/algo-cancer/DETOPT/issues) or contact [Chih Hao Wu](mailto:chih.wu@nih.gov) and [Salem Malikić](mailto:salem.malikic@nih.gov). Please always refer to the GitHub repository of [DETOPT](https://github.com/algo-cancer/DETOPT) for the most updated version of the software and relevant documentation.
 
 <!-- References -->
 [^1]: Zacharakis, N., Huq, L.M., Seitter, S.J., Kim, S.P., Gartner, J.J., Sindiri, S., Hill, V.K., Li, Y.F., Paria, B.C., Ray, S., et al.: Breast cancers are immunogenic: immunologic analyses and a phase ii pilot clinical trial using mutation-reactive autologous lymphocytes. Journal of Clinical Oncology 40(16), 1741–1754 (2022) [https://doi.org/10.1200/jco.21.02170](https://doi.org/10.1200/jco.21.02170)
